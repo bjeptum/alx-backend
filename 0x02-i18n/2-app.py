@@ -23,7 +23,7 @@ class Config:
     app.config.from_objects(Config)
     babel = Babel(app)
 
-    @babel.localeiselector
+    @babel.localeselector
     def get_locale() -> str:
         """Select locale based on best match"""
         return request.accept_languages.best_match(app.config['LANGUAGES'])
