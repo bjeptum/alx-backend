@@ -11,18 +11,20 @@ app = Flask(__name__)
 
 # Config class to store Babel configuration
 class Config:
-    LANGUAGE = ['en','fr']
+    LANGUAGE = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
+
 app.config.from_object(Config)
-babel=Babel(app)
+babel = Babel(app)
 
 
 @app.route('/')
 def home() -> str:
     """Home Page"""
     return render_template('1-index.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
