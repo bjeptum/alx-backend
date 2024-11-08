@@ -6,7 +6,7 @@ Uses Accept-Language header to infer user's
 language preference
 """
 from flask import Flask, render_template, request
-from flask_babel import Babel, _
+from flask_babel import Babel
 
 
 # Flask application setup
