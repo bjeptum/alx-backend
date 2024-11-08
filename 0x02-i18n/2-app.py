@@ -21,7 +21,7 @@ class Config:
 
 
 # Configure the Flask app with defined settings
-app.config.from_objects(Config)
+app.config.from_object(Config)
 babel = Babel(app)
 
 
