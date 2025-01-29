@@ -37,3 +37,5 @@ Makefile.dep
 .ccls
 .ccls-cache/*
 compile_commands.json
+node_modules
+redis-6.0.10
